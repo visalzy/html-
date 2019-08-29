@@ -1,7 +1,7 @@
 # HTML学习记录
  
 
-####*VS CODE快捷键简介*
+#### *VS CODE快捷键简介*
 
 **比较常用的快捷键**
 快捷键|说明
@@ -13,17 +13,18 @@ Alt+B|浏览器中显示网页
 其他的快捷键点击这里：[常用快捷键](https://blog.csdn.net/qq_39082182/article/details/82381304)
 
 
-###HTML相关知识点
+### HTML相关知识点
 
-#####转义字符
+##### 转义字符
 
 一些特殊字符需要特殊的符号来表示这些特殊字符，这些特殊字符我们称为实体（转义字符串）
 markdown文档显示不了
 了解具体转义字符请点击:[转义字符](https://blog.csdn.net/qq_27674439/article/details/93116914)
-ps:markdown中添加空格使用&nbsp；注意分号是英文
+<br>
+ps:  markdown中添加空格使用&nbsp；注意分号是英文
 
 ---
-#####meta标签
+##### meta标签
  meta 标签还可以设置网页的关键字
  name值对content进行描述
 
@@ -37,7 +38,7 @@ meta标签是写在head中的
      <meta http-equiv="refresh" content="5;url=http://www.baidu.com"/>
 
 ---
-#####内联框架
+##### 内联框架
 使用内联框架可以引入一个外部的页面
 使用iframe来创建一个内联框架
 属性：
@@ -47,7 +48,7 @@ meta标签是写在head中的
 
 
 ---
-####超链接
+#### 超链接
 使用超连接可以让我们从一个界面跳转到另一个界面
 使用a标签来创建一个超链接
 属性：
