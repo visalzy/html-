@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 
+        伪类专门用来标识元素的一种特殊状态
+        比如：访问过的超链接，比如普通的超链接，比如获取焦点的文本框
+        当我们需要为处在这些特殊状态的元素设置样式时，
+        就可以使用伪类
+     -->
+
+     <!-- 
+         为没访问过的链接设置一个颜色为绿色
+         ：link
+            -普通的连接（没访问过得链接）
+      -->
+    <style type="text/css">
+    a:link{
+        color:red;
+        font-size: 50px;
+    }
+    /* 由于涉及用户隐私原因，访问过得链接只能设置颜色
+     */
+    a:visited{
+        color:grey
+    }
+    /* 
+        hover ：表述鼠标移入的伪类
+
+    */
+    a:hover{
+        color: blue;
+    }
+    /* 
+        active:超链接被点击的状态
+    */
+    a:active{
+        color: black;
+    }
+    /* 
+    hover 和active 可以为其他元素设置
+
+    */
+    span:hover{
+        background-color: aqua
+    }
+    /* focus 获取焦点 */
+    input:focus{
+        background-color: yellow;
+    }
+
+    /* 为选中的内容使用伪类
+        :::selection
+    */
+    span::selection{
+        color: bisque;
+    }
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">这是一个超链接</a>
+    <a href="http://www.baidu123.com">这是一个超链接</a>
+    <span>这是span</span>
+
+    <br>
+    <input type="text">
+</body>
+</html>
