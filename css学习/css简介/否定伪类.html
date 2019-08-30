@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+            为所有p元素设置一个背景颜色为黄色，除了class值为hello的
+
+            否定伪类：
+                作用：可以从已选中的元素中剔除除某些元素
+                语法：
+                    ：not（选择器） 
+             */
+             P:not(.hello)
+             {
+                 color:gray;
+             }
+    </style>
+</head>
+<body>
+        <p>p标签</p>
+        <p>p标签</p>
+        <p>p标签</p>
+        <p class="hello">p标签</p>
+        <span>span标签</span>
+        <p>p标签</p>
+        <p>p标签</p>
+        <p>p标签</p>
+</body>
+</html>

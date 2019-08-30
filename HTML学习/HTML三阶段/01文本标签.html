@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        em和strong标签
+        -都表示一个强调的内容，em主要表示语气上的强调
+        -strong强调内容，默认使用粗体显示
+     -->
+
+     <p>
+         今天天气<em>真不错</em>!
+     </p>
+
+     <p>
+         <strong>
+             这是一段加粗的文字
+         </strong>
+     </p>
+
+     <!-- 
+         i斜体显示
+         b加粗显示
+
+         不需要着重，单纯的加粗和斜体用i b 
+
+      -->
+     <p>
+         <i>i标签中的内容</i>
+     </p>
+     <p>
+         <b>
+             b标签中的内容
+         </b>
+     </p>
+
+
+
+     <!-- 
+         small 字体变小
+         使用small标签表示一些细则
+      -->
+
+    <p>
+        p label word
+        <small>
+            small label word
+        </small>
+    </p>
+
+
+    <p>
+            p label word
+            <big>
+                big label word
+            </big>
+    </p>
+
+        <!-- 
+            加书名号的内容可以用cite 标签，标示参考的内容
+         -->
+    <p>
+        <cite>《论语》</cite>是一本好书
+    </p>
+
+    <!-- 
+        q标签表示一个短的引用
+        引用的内容会默认加上引号，
+
+        blockquote标签表示一个长引用（块级引用）
+     -->
+     <div>
+         子曰：<q>学而时习之不亦说乎</q>
+     </div>
+
+     <div>
+         lzy said that <blockquote>this is blockquote label word </blockquote>
+     </div>
+
+     <!-- 
+            sup标签设置上标 
+            sub标签设置下标
+      -->
+      <p>
+          2 <sup>2</sup>
+      </p>
+
+      <!-- 
+          ins 标签插入的内容
+          del 标签 删除的内容
+       -->
+       <p>
+          <del>18.75</del> <br>
+           <ins>11.3</ins>
+       </p>
+
+       <!-- 
+           需要在页面中直接编写一些代码
+            pre是预格式标签
+            怎么写的怎么显示
+
+            code专门用来表示代码
+            一般用pre和code结合表示
+        -->
+        <pre>
+window.onload=function(){
+    alert("hello world");
+};
+        </pre>
+        <code>
+                window.onload=function(){
+                    alert("hello world");
+                };
+                code标签 不会保留格式
+
+        </code>
+
+        <pre>
+            <code>
+                    window.onload=function(){
+                        alert("hello world");
+                    };
+                    code标签 不会保留格式
+            </code>
+        </pre>
+        
+</body>
+</html>

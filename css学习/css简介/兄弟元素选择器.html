@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 为span后的p标签设置一个背景颜色为黄色
+            后一个兄弟元素选择器
+            作用：可以选中一个元素后紧挨着的指定的兄弟元素；
+            语法：前一个+后一个
+            中间不能有其他元素隔着
+         */
+        span+p{
+            color:aqua;
+        }
+
+        /* 
+        选中后面的所有兄弟元素
+            语法：前一个~后一个
+         */
+         span~p{
+             font-size: 20px;
+         }
+    </style>
+</head>
+<body>
+    <p>p标签</p>
+    <p>p标签</p>
+    <p>p标签</p>
+    <p>p标签</p>
+    <span>span标签</span>
+    <p>p标签</p>
+    <p>p标签</p>
+    <p>p标签</p>
+</body>
+</html>

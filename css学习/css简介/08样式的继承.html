@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        css中，祖先元素上的样式，也会被他的后代元素所继承
+     -->
+     <div style="font-size: 20px;">
+     <p>this is p label word
+         <span> this is span word in p label</span>
+     </p>
+    </div>
+     <span>this is span label out of the p label</span>
+</body>
+</html>

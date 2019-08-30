@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性选择器</title>
+
+
+    <style>
+    /*
+        为所有具有title属性的标签设置背景颜色为黄色
+        属性选择器
+            -作用：可以根据元素中的属性或者属性值来选取指定元素
+            
+     */
+     p[title]{
+         background-color: yellow;
+     }
+    </style>
+</head>
+<body>
+    <!-- 
+        title属性，可以给人喝标签指定
+        鼠标移入时，title属性的值会作为提示文字来显示
+     -->
+    <p title="鼠标移入到元素上，就显示这句话了">鼠标移上来试一试</p>
+    <p>段落</p>
+    <p>段落</p>
+    <p>段落</p>
+    <p>段落</p>
+    <p>段落</p>
+    <p title="abc">段落</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .p1{
+        color:red;
+    }
+    p{
+        color:green;
+    }
+    #p2{
+        color: black;
+    }
+
+    /* 
+        不同选择器选中同一个元素时并且设置同样的样式时，
+        这样样式之间产生了冲突
+        优先级高的优先显示
+        优先级的规则
+            内联样式 ：优先级 1000
+            id选择器：优先级 100
+            类和伪类： 优先级 10
+            元素选择器：优先级 1
+            通配选择器： 优先级 0
+            继承的样式： 没有优先级
+
+     */
+
+     *{
+         font-size: 50px;
+     }
+     p{
+         font-size: 20px;
+     }
+    </style>
+
+</head>
+<body>
+    <p class="p1" id="p2">测试选择器的优先级
+        <span>p标签中的span</span>
+
+    </p>
+    
+</body>
+</html>

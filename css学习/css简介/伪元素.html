@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <style>
+        /* p:first-line{
+            background-color: aqua;
+        } */
+        /* 
+            伪元素before表示元素最前的部分
+            一般before需要结合content这个样式一起使用，
+            通过content可以向before或after的位置添加一些内容
+            通过 css添加的，无法选中
+         */
+        p::before{
+            content: "我会出现在段落最前面的位置";
+            color:red;
+        }
+        p::after{
+            content:"段落的最后面";
+            color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        12345678910
+    </p>
+</body>
+</html>
