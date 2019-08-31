@@ -12,11 +12,40 @@
         为所有具有title属性的标签设置背景颜色为黄色
         属性选择器
             -作用：可以根据元素中的属性或者属性值来选取指定元素
-            
+            语法：
+                [属性名]选取还有指定属性的元素
+                [属性名=‘属性值’]选取含有指定属性值的元素
+                [属性名^=“属性值”]选取属性值以指定内容开头的元素
+                [属性名$=“属性值”]选取属性值以指定内容结尾的元素
+                [属性名*=“属性值”]选取属性值包含指定内容的元素
+
      */
-     p[title]{
+     /* p[title]{
          background-color: yellow;
-     }
+     } */
+
+     /* 
+        为title属性值为hello的元素设置一个背景颜色为黄色
+
+      */
+      /* p[title=hello]{
+          background-color: yellow;
+      } */
+
+      /* 为title属性值为ab开头的元素设置一个背景颜色为黄色 */
+        /* p[title^="ab"]{
+            background-color: yellow;
+        } */
+
+        /* 为title属性值以C结尾的元素设置一个背景颜色为黄色 */
+        p[title$="c"]{
+            background-color: aqua;
+        }
+        /*为属性值中包含C的元素设置一个背景颜色为黄色 */
+        p[title*="c"]{
+            background-color: azure;
+        }
+
     </style>
 </head>
 <body>

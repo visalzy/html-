@@ -13,6 +13,7 @@
 |!+回车|生成HTML模板|
 |Ctrl+/|快速注释|
 |shift+Tab|代码块回退|
+|div.box+tab|生成《div class="box"></div》|
 其他的快捷键点击这里：[常用快捷键](https://blog.csdn.net/qq_39082182/article/details/82381304)
 
 艹，他这个表格不能距离上面那个太近，艹 错了好久了
