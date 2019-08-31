@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+    <style>
+        /* 
+            只能通过设置行高来简介设置行间距，行高越大间距越大
+            line-height来设置行高
+            行高
+            行高减去字体大小等于行间距
+            可以传一个数值，设置字体大小响应的倍数
+         */
+        .p1{
+            line-height: 40px;
+        }
+
+        .box{
+            width:200px;
+            height:200px;
+            background-color: #bfa;
+            /* 对于单行文本，可以将行高设置为父元素高度一致，这样可以使单行文本在父元素中垂直居中 */
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <a href="#">超链接</a>
+    </div>
+
+    
+</body>
+</html>
