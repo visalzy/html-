@@ -24,6 +24,8 @@
             来设置四个方向的内边距
 
             内边距会影响盒子可见框的大小,元素的背景会延伸到内边距
+            盒子大小由内容区，内边框和边框共同决定
+            盒子可见框的宽度=border-left-width+padding_left+width+padding-right+border-right-width
          */
 
          /* 设置上内边距 */
@@ -31,6 +33,10 @@
          padding-right:100px;
          padding-bottom: 100px;
          padding-left: 100px;
+
+         /* 使用padding可以同时设置四个边框的样式  规则一致*/
+         padding: 100px;
+         
     }
     .box2{
         width:100%;
